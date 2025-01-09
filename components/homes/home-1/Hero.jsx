@@ -112,29 +112,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="bot-categories">
-        <Swiper
-          {...swiperOptions}
-          className="swiper-container slider-courses-10"
-          modules={[Pagination, Navigation]}
-        >
-          {categories.map((category, index) => (
-            <SwiperSlide className="swiper-slide" key={index}>
-              <div className="item">
-                <div className="icon">
-                  <Image
-                    alt={category.title}
-                    src={category.src}
-                    width={category.width}
-                    height={category.height}
-                  />
-                </div>
-                <h6>{category.title}</h6>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
     </div>
   );
 }

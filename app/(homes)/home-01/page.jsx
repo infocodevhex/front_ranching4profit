@@ -14,7 +14,7 @@ import Testimonials from "@/components/homes/home-1/Testimonials";
 
 export const metadata = {
   title:
-    "Home 1 || UpSkill - Education Online Courses LMS React Nextjs Template",
+    "Ranching4profitmx || Mejora tus tierras, tus animales, tus finanzas y tu vida.",
   description: "UpSkill - Education Online Courses LMS React Nextjs Template",
 };
 export default function HomePage1() {
@@ -28,11 +28,11 @@ export default function HomePage1() {
         <Header1 />
         <Hero />
         <div className="main-content pb-63">
-          <Courses />
           <Features />
+          <Banner />
+          <Courses />
           <Facts />
           <Testimonials />
-          <Banner />
           <Instractors />
           <BecomeInstactor />
           <Blogs />

@@ -8,11 +8,11 @@ export default function Features() {
           <div className="col-12">
             <div className="heading-section text-center">
               <h2 className="fw-7 font-cardo wow fadeInUp" data-wow-delay="0s">
-                Why StudyWith Us?
+                Transforma tu rancho en un negocio
               </h2>
-              <div className="sub fs-15 wow fadeInUp" data-wow-delay="0.2s">
+              {/* <div className="sub fs-15 wow fadeInUp" data-wow-delay="0.2s">
                 Become a valuable expert with UpSkill.
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
