@@ -21,12 +21,12 @@ export default function Facts() {
               </div>
               <div className="content">
                 <h2
-                  className="font-cardo fw-7 wow fadeInUp"
+                  className="font-cardo fw-7 wow fadeInUp text-white"
                   data-wow-delay="0s"
                 >
-                  Transforma tu rancho en un negocio
+                  Transforma tu rancho en un negocio
                 </h2>
-                <p className="h6 fw-4 wow fadeInUp" data-wow-delay="0.1s">
+                <p className="h6 fw-4 wow fadeInUp text-white" data-wow-delay="0.1s">
                   Lorem ipsum dolor sit amet consectur adipiscing elit sed
                   eiusmod ex tempor incididunt labore dolore magna aliquaenim
                   minim.
@@ -38,13 +38,13 @@ export default function Facts() {
                       className="number-counter wow fadeInUp"
                       data-wow-delay={counter.delay}
                     >
-                      <div className="counter-content">
-                        <span className="number">
+                      <div className="counter-content text-white">
+                        <span className="number text-white">
                           <Counter max={counter.number} />
                         </span>
                         {counter.suffix}
                       </div>
-                      <p>{counter.description}</p>
+                      <p className="text-white">{counter.description}</p>
                     </div>
                   ))}
                 </div>

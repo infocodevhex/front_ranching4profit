@@ -103,7 +103,7 @@ export default function Footer1({ parentClass = "footer" }) {
                               backgroundColor: "#C1BB93",
                               color: "#2E1C1C",
                             }}
-                            href={link.href}
+                            href={"/"}
                           >
                             <i className={link.icon} />
                           </a>
@@ -124,14 +124,11 @@ export default function Footer1({ parentClass = "footer" }) {
                         {menu.links.map((link, linkIndex) => (
                           <li key={linkIndex}>
                             {link.href.startsWith("/") ? (
-                              <Link
-                                href={link.href}
-                                style={{ color: "#FBFBF9" }}
-                              >
+                              <Link href={"/"} style={{ color: "#FBFBF9" }}>
                                 {link.name}
                               </Link>
                             ) : (
-                              <a href={link.href} style={{ color: "#FBFBF9" }}>
+                              <a href={"/"} style={{ color: "#FBFBF9" }}>
                                 {link.name}
                               </a>
                             )}
@@ -145,7 +142,7 @@ export default function Footer1({ parentClass = "footer" }) {
                     data-wow-delay="0.5s"
                   >
                     <h5 className="fw-5" style={{ color: "#C1BB93" }}>
-                      Subscribe
+                      Subscribe to Newsletter
                     </h5>
                     <p style={{ color: "#FBFBF9" }}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -183,7 +180,11 @@ export default function Footer1({ parentClass = "footer" }) {
                         />
                       </fieldset>
                       <div className="button-submit">
-                        <button className="tf-btn-arrow" type="submit">
+                        <button
+                          style={{ color: "white" }}
+                          className="tf-btn-arrow"
+                          type="submit"
+                        >
                           Send
                           <i className="icon-arrow-top-right" />
                         </button>

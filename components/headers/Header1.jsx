@@ -76,7 +76,7 @@ export default function Header1() {
               <i className="icon-search fs-20" />
             </a>
             <Link
-              href={`/shop-cart`}
+              href={`/`}
               className="header-cart flex items-center justify-center"
             >
               <i className="icon-shopcart fs-18" />

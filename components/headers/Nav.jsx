@@ -38,7 +38,9 @@ export default function Nav() {
       {menuItems.map((item, index) => (
         <li
           key={index}
-          className={item.isActive ? "has-children current" : "has-children"}
+          className={`${item.subItems?.length > 0 ? 'has-children' : ''} ${
+            item.isActive ? 'current' : ''
+          }`}
         >
           <a
             href="#"
@@ -46,7 +48,7 @@ export default function Nav() {
           >
             {item.title}
           </a>
-          {item.subItems.length > 0 && (
+          {item.subItems?.length > 0 && (
             <ul className={item.hasMega ? "mega-menu" : ""}>
               {item.subItems.map((subItem, subIndex) => (
                 <li

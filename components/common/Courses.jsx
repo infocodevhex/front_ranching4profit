@@ -103,7 +103,10 @@ export default function Courses({ titleFont = "font-cardo" }) {
                         </div>
                       </div>
                       <h6 className="fw-5 line-clamp-2">
-                        <Link href={`/course-single-v1/${course.id}`}>
+                        {/* <Link href={`/course-single-v1/${course.id}`}>
+                          {course.title}
+                        </Link> */}
+                        <Link href={`/`}>
                           {course.title}
                         </Link>
                       </h6>
@@ -136,7 +139,7 @@ export default function Courses({ titleFont = "font-cardo" }) {
                       <div className="bottom">
                         <div className="h6 price fw-5">${course.price}</div>
                         <Link
-                          href={`/course-single-v1/${course.id}`}
+                          href={`/`}
                           className="tf-btn-arrow"
                         >
                           <span className="fw-5 fs-15">Enroll Course</span>
