@@ -16,7 +16,7 @@ export const menuItems = [
     ],
   },
   {
-    title: "Courses",
+    title: "Servicios",
     hasMega: true,
     subItems: [
       {
@@ -60,7 +60,7 @@ export const menuItems = [
     ],
   },
   {
-    title: "Pages",
+    title: "Nosotros",
     isActive: false,
     subItems: [
       { title: "Instructor List", href: "/instructor-list" },
@@ -83,7 +83,7 @@ export const menuItems = [
     ],
   },
   {
-    title: "Blog",
+    title: "Testimonios",
     subItems: [
       { title: "Blog Grid", href: "/blog-grid" },
       { title: "Blog List 01", href: "/blog-list-v1" },
@@ -92,7 +92,27 @@ export const menuItems = [
     ],
   },
   {
-    title: "Shop",
+    title: "Profit tips",
+    subItems: [
+      { title: "Shop List", href: "/shop-list" },
+      { title: "Shop Single", href: "/shop-single/1" },
+      { title: "Shop Cart", href: "/shop-cart" },
+      { title: "Shop Checkout", href: "/shop-checkout" },
+      { title: "Shop Order", href: "/shop-order" },
+    ],
+  },
+  {
+    title: "Tutor digital",
+    subItems: [
+      { title: "Shop List", href: "/shop-list" },
+      { title: "Shop Single", href: "/shop-single/1" },
+      { title: "Shop Cart", href: "/shop-cart" },
+      { title: "Shop Checkout", href: "/shop-checkout" },
+      { title: "Shop Order", href: "/shop-order" },
+    ],
+  },
+  {
+    title: "FAQs",
     subItems: [
       { title: "Shop List", href: "/shop-list" },
       { title: "Shop Single", href: "/shop-single/1" },

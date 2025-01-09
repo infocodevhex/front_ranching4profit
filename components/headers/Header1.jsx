@@ -23,7 +23,7 @@ export default function Header1() {
                 <Image
                   id="logo-header"
                   alt=""
-                  src="/images/logo/logo.svg"
+                  src="/images/logo/r4p_logo.png"
                   width={123}
                   height={36}
                 />
@@ -82,22 +82,14 @@ export default function Header1() {
               <i className="icon-shopcart fs-18" />
             </Link>
             <div className="header-btn flex gap-10">
-              <div className="header-login">
+              <div style={{ border: "1px solid #131836", borderRadius: "4px" }} className="header-login">
                 <Link href={`/login`} className="tf-button-default header-text">
-                  Log In
-                </Link>
-              </div>
-              <div className="header-register">
-                <Link
-                  href={`/register`}
-                  className="tf-button-default active header-text"
-                >
-                  Sign Up
+                  Inicia sesión
                 </Link>
               </div>
               <div className="d-lg-none flex">
                 <Link href={`/login`} className="fs-15">
-                  Join
+                  Iniciar
                 </Link>
               </div>
             </div>

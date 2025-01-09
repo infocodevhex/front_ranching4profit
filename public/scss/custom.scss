@@ -117,3 +117,19 @@
 .tf-sidebar .sidebar-item .showmore-item .d-none {
   display: none !important;
 }
+
+.hero-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(46,33,28,0.2),  /* 50% opacidad arriba */
+    rgba(46,33,28,0.5), /* 75% opacidad en medio */
+    rgba(46,33,28,0.9)   /* 90% opacidad abajo */
+  );
+  z-index: -1;
+}
