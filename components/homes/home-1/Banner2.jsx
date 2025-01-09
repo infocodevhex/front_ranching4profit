@@ -6,17 +6,17 @@ export default function Banner2() {
       <div className="tf-container">
         <div className="row">
           <div className="col-lg-12">
-            <div className="main-section">
+            <div  className="main-section">
               <div className="heading-section style-white mb-0">
                 <h2 className="font-cardo wow fadeInUp" data-wow-delay="0.1s">
-                  Join More Than 1 Million
-                  <br /> Learners Worldwide
+                  Continua aprendiendo
                 </h2>
                 <p className="sub wow fadeInUp" data-wow-delay="0.2s">
                   {" "}
-                  Effective learning starts with assessment. Learning a new
-                  skill <br />
-                  is hard work—Signal makes it easier.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. skill{" "}
+                  <br />
+                  Praesent tincidunt enim a nibh convallis, eu imperdiet purus
+                  efficitur. Sed consequat sapien ex
                 </p>
               </div>
               <a
@@ -24,7 +24,7 @@ export default function Banner2() {
                 className="tf-btn style-secondary wow fadeInUp"
                 data-wow-delay="0.3s"
               >
-                Get Started Now <i className="icon-arrow-top-right" />
+                Suscribirse <i className="icon-arrow-top-right" />
               </a>
             </div>
           </div>

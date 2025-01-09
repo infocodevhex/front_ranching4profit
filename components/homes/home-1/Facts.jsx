@@ -24,14 +24,12 @@ export default function Facts() {
                   className="font-cardo fw-7 wow fadeInUp"
                   data-wow-delay="0s"
                 >
-                  Learn The Secrets To&nbsp;Life Success, These People Have Got
-                  The Key.​
+                  Transforma tu rancho en un negocio
                 </h2>
                 <p className="h6 fw-4 wow fadeInUp" data-wow-delay="0.1s">
-                  {" "}
-                  Lorem ipsum dolor sit amet consectur adipiscing elit <br />{" "}
-                  sed eiusmod ex tempor incididunt labore dolore magna <br />{" "}
-                  aliquaenim minim.
+                  Lorem ipsum dolor sit amet consectur adipiscing elit sed
+                  eiusmod ex tempor incididunt labore dolore magna aliquaenim
+                  minim.
                 </p>
                 <div className="counter style-2">
                   {counters.map((counter, index) => (

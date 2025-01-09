@@ -18,18 +18,18 @@ export default function Courses({ titleFont = "font-cardo" }) {
                 className={`fw-7 ${titleFont} wow fadeInUp`}
                 data-wow-delay="0s"
               >
-                Browse Our Top Courses
+                Cursos cerca de ti
               </h2>
               <div className="flex items-center justify-between flex-wrap gap-10 ">
                 <div className="sub fs-15 wow fadeInUp" data-wow-delay="0.2s">
                   Lorem ipsum dolor sit amet elit
                 </div>
                 <Link
-                  href={`/course-grid-basic`}
+                  href={`/`}
                   className="tf-btn-arrow wow fadeInUp"
                   data-wow-delay="0.3s"
                 >
-                  Show More Courses <i className="icon-arrow-top-right" />
+                  Ver todos <i className="icon-arrow-top-right" />
                 </Link>
               </div>
             </div>

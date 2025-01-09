@@ -33,9 +33,9 @@ export default function HomePage1() {
           <Courses />
           <Facts />
           <Testimonials />
-          <Instractors />
-          <BecomeInstactor />
-          <Blogs />
+          {/* <Instractors /> */}
+          {/* <BecomeInstactor /> */}
+          {/* <Blogs /> */}
           <Brands />
           <Banner2 />
         </div>

@@ -48,7 +48,7 @@ export default function Brands() {
             className="col-12 text-center wow fadeInUp"
             data-wow-delay="0.1s"
           >
-            <h6>Learn From The World's Leading Experts</h6>
+            <h6>Ellos ya confían en nosotros</h6>
           </div>
         </div>
         <div className="row">

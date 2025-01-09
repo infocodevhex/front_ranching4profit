@@ -58,7 +58,7 @@ export default function Testimonials({
                 className={`fw-7 ${titleFont} wow fadeInUp`}
                 data-wow-delay="0s"
               >
-                What Clients Are Saying
+                Testimonios
               </h2>
               <div className="sub fs-15 wow fadeInUp" data-wow-delay="0.2s">
                 Lorem ipsum dolor sit amet elit
