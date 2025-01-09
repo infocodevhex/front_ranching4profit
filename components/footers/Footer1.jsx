@@ -35,7 +35,11 @@ export default function Footer1({ parentClass = "footer" }) {
       });
   };
   return (
-    <footer id="footer" className={parentClass}>
+    <footer
+      style={{ backgroundColor: "#2E1C1C" }}
+      id="footer"
+      className={parentClass}
+    >
       <div className="footer-wrap">
         <div className="footer-body">
           <div className="tf-container">
@@ -50,30 +54,41 @@ export default function Footer1({ parentClass = "footer" }) {
                       <Link href={`/`}>
                         <Image
                           alt=""
-                          src="/images/logo/logo.svg"
-                          width={123}
-                          height={36}
+                          src="/images/logo/r4p_logo.png"
+                          width={280}
+                          height={126}
                         />
                       </Link>
                     </div>
                     <ul className="address">
                       <li className="flex gap-10 items-center">
                         <div className="icon">
-                          <i className="flaticon-call" />
+                          <i
+                            className="flaticon-call"
+                            style={{ color: "#C1BB93" }}
+                          />
                         </div>
-                        <p>+1 (555) 123-4567</p>
+                        <p style={{ color: "#FBFBF9" }}>+1 (555) 123-4567</p>
                       </li>
                       <li className="flex gap-10 items-center">
                         <div className="icon">
-                          <i className="flaticon-mail-1" />
+                          <i
+                            className="flaticon-mail-1"
+                            style={{ color: "#C1BB93" }}
+                          />
                         </div>
-                        <p>support@upskill.com</p>
+                        <p style={{ color: "#FBFBF9" }}>
+                          support@ranching4profitmx.com
+                        </p>
                       </li>
                       <li className="flex gap-10 items-center">
                         <div className="icon">
-                          <i className="flaticon-location" />
+                          <i
+                            className="flaticon-location"
+                            style={{ color: "#C1BB93" }}
+                          />
                         </div>
-                        <p>
+                        <p style={{ color: "#FBFBF9" }}>
                           58 Howard Street #2 San
                           <br />
                           Francisco
@@ -83,7 +98,13 @@ export default function Footer1({ parentClass = "footer" }) {
                     <ul className="tf-social-icon flex items-center gap-10">
                       {socialLinks.map((link, index) => (
                         <li key={index}>
-                          <a href={link.href}>
+                          <a
+                            style={{
+                              backgroundColor: "#C1BB93",
+                              color: "#2E1C1C",
+                            }}
+                            href={link.href}
+                          >
                             <i className={link.icon} />
                           </a>
                         </li>
@@ -96,14 +117,23 @@ export default function Footer1({ parentClass = "footer" }) {
                       className="footer-menu-list wow fadeInUp"
                       data-wow-delay={menu.delay}
                     >
-                      <h5 className="fw-5">{menu.title}</h5>
-                      <ul>
+                      <h5 className="fw-5" style={{ color: "#C1BB93" }}>
+                        {menu.title}
+                      </h5>
+                      <ul style={{ color: "#FBFBF9" }}>
                         {menu.links.map((link, linkIndex) => (
                           <li key={linkIndex}>
                             {link.href.startsWith("/") ? (
-                              <Link href={link.href}>{link.name}</Link>
+                              <Link
+                                href={link.href}
+                                style={{ color: "#FBFBF9" }}
+                              >
+                                {link.name}
+                              </Link>
                             ) : (
-                              <a href={link.href}>{link.name}</a>
+                              <a href={link.href} style={{ color: "#FBFBF9" }}>
+                                {link.name}
+                              </a>
                             )}
                           </li>
                         ))}
@@ -114,10 +144,13 @@ export default function Footer1({ parentClass = "footer" }) {
                     className="footer-subscribe wow fadeInUp"
                     data-wow-delay="0.5s"
                   >
-                    <h5 className="fw-5">Subscribe</h5>
-                    <p>
-                      2000+ Our students are subscribe Around the World. Don’t
-                      be shy introduce yourself!
+                    <h5 className="fw-5" style={{ color: "#C1BB93" }}>
+                      Subscribe
+                    </h5>
+                    <p style={{ color: "#FBFBF9" }}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Praesent tincidunt enim a nibh convallis, eu imperdiet
+                      purus efficitur. Sed consequat sapien ex
                     </p>
                     <div
                       className={`tfSubscribeMsg ${
@@ -156,7 +189,9 @@ export default function Footer1({ parentClass = "footer" }) {
                         </button>
                       </div>
                     </form>
-                    <h5 className="fw-5 get-app">Get the app</h5>
+                    <h5 className="fw-5 get-app" style={{ color: "#C1BB93" }}>
+                      Get the app
+                    </h5>
                     <ul className="tf-app-download">
                       <li>
                         <a href="#">
@@ -191,8 +226,23 @@ export default function Footer1({ parentClass = "footer" }) {
           <div className="tf-container">
             <div className="row">
               <div className="col-12">
-                <div className="footer-bottom-wrap flex justify-center items-center">
-                  <p>©&nbsp;2024&nbsp;UpSkill. All Rights Reserved</p>
+                <div
+                  style={{ display: "flex", flexDirection: "column" }}
+                  className="footer-bottom-wrap flex justify-center items-center"
+                >
+                  <p style={{ color: "white" }}>
+                    ©&nbsp;2025&nbsp;Ranching4profitmx. All Rights Reserved{" "}
+                  </p>
+                  <p style={{ color: "white" }}>
+                    Designed by{" "}
+                    <span>
+                      {" "}
+                      <a style={{ color: "white" }} href="/">
+                        {" "}
+                        Codevhex
+                      </a>{" "}
+                    </span>
+                  </p>
                 </div>
               </div>
             </div>

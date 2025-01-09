@@ -15,7 +15,7 @@ import Testimonials from "@/components/homes/home-1/Testimonials";
 export const metadata = {
   title:
     "Ranching4profitmx || Mejora tus tierras, tus animales, tus finanzas y tu vida.",
-  description: "UpSkill - Education Online Courses LMS React Nextjs Template",
+  description: "Ranching4profitmx",
 };
 export default function HomePage1() {
   return (
