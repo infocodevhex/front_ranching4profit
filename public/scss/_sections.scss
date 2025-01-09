@@ -2363,7 +2363,7 @@
     .wrap-content {
       @include flex(flex-start, center);
       flex-direction: column;
-      background-color: #d6ebf4;
+      background-color: rgba(46, 33, 28, 0.7);
       padding: 10px 80px 21px 80px;
       width: 51%;
 

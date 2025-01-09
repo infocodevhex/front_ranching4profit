@@ -76,12 +76,11 @@ export default function Features() {
               <div className="content">
                 <h4>
                   <a className="fw-5" href="#">
-                    World Class Teachers
+                    Transforma
                   </a>
                 </h4>
                 <p>
-                  What should be the structure of an effective <br /> websites
-                  and designs.
+                  Tu rancho de un conjunto de activos y un<br/> montón de trabajos a una empresa exitosa.
                 </p>
               </div>
             </div>
@@ -153,12 +152,11 @@ export default function Features() {
               <div className="content">
                 <h4>
                   <a className="fw-5" href="#">
-                    Global Community
+                    Mejora
                   </a>
                 </h4>
-                <p>
-                  What should be the structure of an effective <br /> websites
-                  and designs.
+                <p className="text-balance">
+                  Tus suelos, tus animales, tu vida <br/> y tus finanzas.
                 </p>
               </div>
             </div>
@@ -210,12 +208,11 @@ export default function Features() {
               <div className="content">
                 <h4>
                   <a className="fw-5" href="#">
-                    Top Notch Courses
+                    Crea
                   </a>
                 </h4>
                 <p>
-                  What should be the structure of an effective <br /> websites
-                  and designs.
+                  Un campo resilente y un flujo de capital positivo.
                 </p>
               </div>
             </div>
