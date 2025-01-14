@@ -22,7 +22,9 @@ export default function page({ params }) {
         </div>
 
         <Header1 />
-        <PageTitle />
+        <PageTitle 
+          title="Producto"
+        />
         <ShopSingle product={product} />
         <Footer1 parentClass="footer has-border-top" />
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-export default function PageTitle() {
+export default function PageTitle({title}) {
   return (
     <div className="page-title page-title-shop-list">
       <div className="tf-container">
@@ -22,7 +22,7 @@ export default function PageTitle() {
                 </li>
                 <li>Shop</li>
               </ul> */}
-              <h2 className="font-cardo fw-7">Tienda</h2>
+              <h2 className="font-cardo fw-7">{title}</h2>
               <h6>
                 Products that help beginner designers become true unicorns.
               </h6>

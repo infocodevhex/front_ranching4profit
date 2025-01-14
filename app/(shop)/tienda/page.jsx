@@ -18,7 +18,9 @@ export default function page() {
         </div>
 
         <Header1 />
-        <PageTitle />
+        <PageTitle 
+          title="Tienda"
+        />
         <ShopList />
         <Footer1 parentClass="footer has-border-top" />
       </div>
