@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/react"
 import "../public/scss/main.scss";
 import "swiper/css/effect-fade";
 
@@ -135,6 +136,7 @@ export default function RootLayout({ children }) {
         <SearchModal />
         <BackToTop />
         <MobileMenu />
+        <Analytics />
       </body>
     </html>
   );
