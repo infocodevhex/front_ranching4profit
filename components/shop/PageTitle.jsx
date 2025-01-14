@@ -7,7 +7,7 @@ export default function PageTitle() {
         <div className="row">
           <div className="col-12">
             <div className="content text-center">
-              <ul className="breadcrumbs flex items-center justify-center gap-10">
+              {/* <ul className="breadcrumbs flex items-center justify-center gap-10">
                 <li>
                   <Link href={`/`} className="flex">
                     <i className="icon-home" />
@@ -21,8 +21,8 @@ export default function PageTitle() {
                   <i className="icon-arrow-right" />
                 </li>
                 <li>Shop</li>
-              </ul>
-              <h2 className="font-cardo fw-7">Shop Page</h2>
+              </ul> */}
+              <h2 className="font-cardo fw-7">Tienda</h2>
               <h6>
                 Products that help beginner designers become true unicorns.
               </h6>
