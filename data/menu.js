@@ -32,7 +32,7 @@ export const menuItems = [
   },
   {
     title: "FAQs",
-    href: "/",
+    href: "/faq",
     subItems: [],
   },
 ];

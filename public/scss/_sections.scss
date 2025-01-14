@@ -303,14 +303,14 @@
 
 .page-title {
   padding: 53px 0 51px;
-  background-color: var(--bg-4);
+  background-color: var(--White);
   position: relative;
 
   &::before {
     position: absolute;
     content: "";
     inset: 0;
-    background-image: url(./../images/page-title/inner-page.png);
+    // background-image: url(./../images/page-title/inner-page.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

@@ -12,7 +12,7 @@ export default function Faqs2() {
                 className="fw-7 font-cardo wow fadeInUp"
                 data-wow-delay="0.2s"
               >
-                Making Courses
+                Tutor digital
               </h2>
               <div className="sub fs-15 wow fadeInUp" data-wow-delay="0.3s">
                 Here are the questions about this template.
