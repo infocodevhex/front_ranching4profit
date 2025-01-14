@@ -1,9 +1,8 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Nav from "./Nav";
 import Link from "next/link";
 import Image from "next/image";
-import Categories from "./Categories";
 import MobileNav from "./MobileNav";
 export default function Header1() {
   return (

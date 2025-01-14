@@ -1,29 +1,30 @@
 "use client";
-import { categories, menuItems } from "@/data/menu";
+import { menuItems } from "@/data/menu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
 export default function MobileMenu() {
   const pathname = usePathname();
+
   const isMenuActive = (menu) => {
     let isActive = false;
     if (menu.href !== "#") {
-      if (pathname.split("/")[1] == menu.href?.split("/")[1]) {
+      if (pathname.split("/")[1] === menu.href?.split("/")[1]) {
         isActive = true;
       }
     }
     if (menu.subItems) {
       menu.subItems.forEach((el) => {
-        if (el.href != "#") {
-          if (pathname.split("/")[1] == el.href?.split("/")[1]) {
+        if (el.href !== "#") {
+          if (pathname.split("/")[1] === el.href?.split("/")[1]) {
             isActive = true;
           }
         }
         if (el.subItems) {
-          el.subItems.map((elm) => {
-            if (elm.href != "#") {
-              if (pathname.split("/")[1] == elm.href?.split("/")[1]) {
+          el.subItems.forEach((elm) => {
+            if (elm.href !== "#") {
+              if (pathname.split("/")[1] === elm.href?.split("/")[1]) {
                 isActive = true;
               }
             }
@@ -33,6 +34,7 @@ export default function MobileMenu() {
     }
     return isActive;
   };
+
   return (
     <>
       {/* Offcanvas for Mobile Menu */}
@@ -41,6 +43,7 @@ export default function MobileMenu() {
         tabIndex={-1}
         id="offcanvasMenu"
         aria-labelledby="offcanvasMenuLabel"
+        style={{ backgroundColor: "#F3F3F3" }}
       >
         <div className="offcanvas-header">
           <h5 className="offcanvas-title" id="offcanvasMenuLabel">
@@ -55,17 +58,15 @@ export default function MobileMenu() {
         </div>
         <div className="offcanvas-body">
           <ul className="list-group">
-            {[
-              { title: "Categories", subItems: categories, noActive: true },
-              ...menuItems,
-            ].map((item, index) => (
+            {menuItems.map((item, index) => (
               <li
                 className={`list-group-item ${
                   item.noActive ? "disabled-active-menu" : ""
                 }`}
                 key={index}
+                style={{ backgroundColor: "#F3F3F3" }}
               >
-                {item.subItems ? (
+                {item.subItems?.length ? (
                   <>
                     <a
                       href="#!"
@@ -79,12 +80,16 @@ export default function MobileMenu() {
                     </a>
                     <ul id={`menu${index}`} className="list-group collapse">
                       {item.subItems.map((subItem, subIndex) => (
-                        <li className="list-group-item" key={subIndex}>
-                          {subItem.subItems ? (
+                        <li
+                          className="list-group-item"
+                          key={subIndex}
+                          style={{ backgroundColor: "#F3F3F3" }}
+                        >
+                          {subItem.subItems?.length ? (
                             <>
                               <a
                                 href="#!"
-                                className={`submenu-toggle collapsed  ${
+                                className={`submenu-toggle collapsed ${
                                   isMenuActive(subItem) ? "activeMenu" : ""
                                 }`}
                                 data-bs-toggle="collapse"
@@ -103,7 +108,7 @@ export default function MobileMenu() {
                                       key={subSubIndex}
                                     >
                                       <Link
-                                        className={` nav-link-mobile  ${
+                                        className={`nav-link-mobile ${
                                           isMenuActive(subSubItem)
                                             ? "activeMenu"
                                             : ""
@@ -119,7 +124,7 @@ export default function MobileMenu() {
                             </>
                           ) : (
                             <Link
-                              className={` nav-link-mobile  ${
+                              className={`nav-link-mobile ${
                                 isMenuActive(subItem) ? "activeMenu" : ""
                               }`}
                               href={subItem.href}
@@ -133,7 +138,7 @@ export default function MobileMenu() {
                   </>
                 ) : (
                   <Link
-                    className={`nav-link-mobile   ${
+                    className={`nav-link-mobile ${
                       isMenuActive(item) ? "activeMenu" : ""
                     }`}
                     href={item.href}

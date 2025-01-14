@@ -13,34 +13,17 @@ export default function page() {
     <>
       <div id="wrapper">
         <div className="tf-top-bar flex items-center justify-center">
-          <p>Intro price. Get UpSkill for Big Sale -95% off.</p>
+          <p>$5,000 PESOS DE DESCUENTO PARA UN ACOMPAÑANTE</p>
         </div>
 
         <Header1 />
-        <div className="page-title basic">
+        <div style={{ padding: "50px 0" }} className="basic">
           <div className="tf-container full">
             <div className="row">
               <div className="col-12">
                 <div className="content text-center">
-                  <ul className="breadcrumbs flex items-center justify-center gap-10">
-                    <li>
-                      <Link href={`/`} className="flex">
-                        <i className="icon-home" />
-                      </Link>
-                    </li>
-                    <li>
-                      <i className="icon-arrow-right" />
-                    </li>
-                    <li>Pages</li>
-                    <li>
-                      <i className="icon-arrow-right" />
-                    </li>
-                    <li>Instructor</li>
-                  </ul>
-                  <h2 className="font-cardo fw-7">Instructor</h2>
-                  <h6>
-                    Products that help beginner designers become true unicorns.
-                  </h6>
+                  <h2 className="font-cardo fw-7">Testimonios</h2>
+                  <h6>Lorem ipsum dolor sit amet</h6>
                 </div>
               </div>
             </div>

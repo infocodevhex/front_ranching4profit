@@ -8,42 +8,51 @@ export default function Nav() {
   const pathname = usePathname();
   const isMenuActive = (menu) => {
     let isActive = false;
-    if (menu.href !== "#") {
-      if (pathname.split("/")[1] == menu.href?.split("/")[1]) {
+
+    if (!menu.subItems || menu.subItems.length === 0) {
+      if (pathname.split("/")[1] === menu.href?.split("/")[1]) {
         isActive = true;
       }
-    }
-    if (menu.subItems) {
-      menu.subItems.forEach((el) => {
-        if (el.href != "#") {
-          if (pathname.split("/")[1] == el.href?.split("/")[1]) {
-            isActive = true;
-          }
+    } else {
+      if (menu.href && pathname.split("/")[1] === menu.href?.split("/")[1]) {
+        isActive = true;
+      }
+
+      menu.subItems.forEach((subItem) => {
+        if (
+          subItem.href &&
+          pathname.split("/")[1] === subItem.href?.split("/")[1]
+        ) {
+          isActive = true;
         }
-        if (el.subItems) {
-          el.subItems.map((elm) => {
-            if (elm.href != "#") {
-              if (pathname.split("/")[1] == elm.href?.split("/")[1]) {
-                isActive = true;
-              }
+
+        if (subItem.subItems) {
+          subItem.subItems.forEach((subSubItem) => {
+            if (
+              subSubItem.href &&
+              pathname.split("/")[1] === subSubItem.href?.split("/")[1]
+            ) {
+              isActive = true;
             }
           });
         }
       });
     }
+
     return isActive;
   };
+
   return (
     <>
       {menuItems.map((item, index) => (
         <li
           key={index}
-          className={`${item.subItems?.length > 0 ? 'has-children' : ''} ${
-            item.isActive ? 'current' : ''
+          className={`${item.subItems?.length > 0 ? "has-children" : ""} ${
+            isMenuActive(item) ? "current" : ""
           }`}
         >
           <a
-            href="#"
+            href={item.href || "#"}
             className={isMenuActive(item) ? "parent-active activeMenu" : ""}
           >
             {item.title}
@@ -67,7 +76,7 @@ export default function Nav() {
                   {subItem.href ? (
                     <Link
                       href={subItem.href}
-                      className={`${isMenuActive(subItem) ? "activeMenu" : ""}`}
+                      className={isMenuActive(subItem) ? "activeMenu" : ""}
                     >
                       {subItem.title}
                     </Link>
@@ -78,9 +87,9 @@ export default function Nav() {
                           <li key={subSubIndex}>
                             <Link
                               href={subSubItem.href}
-                              className={`${
+                              className={
                                 isMenuActive(subSubItem) ? "activeMenu" : ""
-                              }`}
+                              }
                             >
                               {subSubItem.title}
                             </Link>

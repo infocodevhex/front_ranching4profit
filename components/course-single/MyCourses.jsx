@@ -30,7 +30,7 @@ export default function MyCourses() {
     <>
       <div className="heading-section">
         <h6 className="fw-5 text-22 wow fadeInUp" data-wow-delay="0s">
-          More Course By&nbsp;Theresa Edin
+          Proximos cursos
         </h6>
       </div>
       <Swiper
@@ -40,6 +40,7 @@ export default function MyCourses() {
         {courses.map((elm, i) => (
           <SwiperSlide key={i}>
             <div
+              style={{ backgroundColor: "#F7F7F2", borderRadius: "12px" }}
               className="course-item hover-img title-small wow fadeInUp"
               data-wow-delay="0s"
             >
@@ -69,7 +70,7 @@ export default function MyCourses() {
                   <i className="flaticon-heart" />
                 </div>
               </div>
-              <div className="content">
+              <div style={{ padding: "8px" }} className="content">
                 <div className="meta">
                   <div className="meta-item">
                     <i className="flaticon-calendar" />
