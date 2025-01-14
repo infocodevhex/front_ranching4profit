@@ -1,30 +1,8 @@
 "use client";
 import { instructors } from "@/data/instractors";
-import { Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import Link from "next/link";
-import Image from "next/image";
+import InstructorCard from "@/components/v2/InstructorCard";
+
 export default function Instractors() {
-  const options = {
-    spaceBetween: 25,
-    observer: true,
-    observeParents: true,
-    breakpoints: {
-      425: {
-        slidesPerView: 1.5,
-        spaceBetween: 15,
-      },
-      700: {
-        slidesPerView: 2.3,
-      },
-      1000: {
-        slidesPerView: 3,
-      },
-      1440: {
-        slidesPerView: 5,
-      },
-    },
-  };
   return (
     <section className="section-instructor tf-spacing-3 pt-0">
       <div className="tf-container">
@@ -32,68 +10,33 @@ export default function Instractors() {
           <div className="col-12">
             <div className="heading-section">
               <h2 className="fw-7 font-cardo wow fadeInUp" data-wow-delay="0s">
-                Learn From The Best Instructors
+                Nuestro equipo
               </h2>
               <div className="flex items-center justify-between flex-wrap gap-10">
                 <div className="sub fs-15 wow fadeInUp" data-wow-delay="0.1s">
-                  Lorem ipsum dolor sit amet, consectetur.
+                  Los profesores de Ranching4profitMX se les reconoce por su
+                  excelencia y profesionalismo. Cada profesor tiene un historial
+                  que lo respalda en el ámbito agropecuario. Con su propio
+                  sentido del humor y personalidad, cada uno de nuestros
+                  instructores hará que cada escuela se sienta diferente. Con el
+                  uso de diferentes herramientas altamente efectivas, casos
+                  reales, problemas reales, para ganaderos reales.
                 </div>
-                <Link
-                  href={`/instructor-list`}
-                  className="tf-btn-arrow wow fadeInUp"
-                  data-wow-delay="0.2s"
-                >
-                  See All Instructors <i className="icon-arrow-top-right" />
-                </Link>
               </div>
             </div>
-            <Swiper
-              className="swiper-container slider-courses-5 wow fadeInUp"
-              data-wow-delay="0.3s"
-              {...options}
-              modules={[Navigation, Pagination]}
+            <div
+              className="instructors-container"
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "center",
+                gap: "25px",
+              }}
             >
               {instructors.map((instructor, index) => (
-                <SwiperSlide className="swiper-slide" key={index}>
-                  <div className="instructors-item hover-img style-column">
-                    <div className="image-wrap">
-                      <Image
-                        className="lazyload"
-                        data-src={instructor.imgSrc}
-                        alt={instructor.alt}
-                        src={instructor.imgSrc}
-                        width={520}
-                        height={521}
-                      />
-                    </div>
-                    <div className="entry-content">
-                      <ul className="entry-meta">
-                        <li>
-                          <i className="flaticon-user" />
-                          {instructor.students} Students
-                        </li>
-                        <li>
-                          <i className="flaticon-play" />
-                          {instructor.courses} Course
-                        </li>
-                      </ul>
-                      <h6 className="entry-title">
-                        <Link href={`/instructor-single/${instructor.id}`}>
-                          {instructor.name}
-                        </Link>
-                      </h6>
-                      <p className="short-description">
-                        {instructor.description}
-                      </p>
-                      <div className="ratings">
-                        <div className="number">{instructor.rating}</div>
-                        <i className="icon-star-1" />
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
+                <InstructorCard key={index} instructor={instructor} />
               ))}
-            </Swiper>
+            </div>
           </div>
         </div>
       </div>

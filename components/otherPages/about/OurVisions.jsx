@@ -19,14 +19,6 @@ export default function OurVisions() {
           </div>
           <div className="col-lg-5">
             <div className="content">
-              <div className="box-sub-tag wow fadeInUp">
-                <div className="sub-tag-icon">
-                  <i className="icon-flash" />
-                </div>
-                <div className="sub-tag-title">
-                  <p>Our Vision</p>
-                </div>
-              </div>
               <h2 className="fw-7 font-cardo wow fadeInUp">
                 35,000+ Happy Students Joined With Us To Achieve Their Goals
               </h2>
