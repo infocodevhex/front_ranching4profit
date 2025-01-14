@@ -23,7 +23,7 @@ export default function page() {
             <div className="row">
               <div className="col-12">
                 <div className="content text-center">
-                  <ul className="breadcrumbs flex items-center justify-center gap-10">
+                  {/* <ul className="breadcrumbs flex items-center justify-center gap-10">
                     <li>
                       <Link href={`/`} className="flex">
                         <i className="icon-home" />
@@ -37,9 +37,9 @@ export default function page() {
                       <i className="icon-arrow-right" />
                     </li>
                     <li>Instructor</li>
-                  </ul>
+                  </ul> */}
                   <h2 className="font-cardo fw-7">
-                    Frequently Asked Questions
+                    Preguntas frecuentes
                   </h2>
                   <h6>
                     We’re on a mission to deliver engaging, curated courses at a

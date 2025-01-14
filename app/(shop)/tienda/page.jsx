@@ -14,11 +14,13 @@ export default function page() {
     <>
       <div id="wrapper">
         <div className="tf-top-bar flex items-center justify-center">
-          <p>Intro price. Get UpSkill for Big Sale -95% off.</p>
+          <p>$5,000 PESOS DE DESCUENTO PARA UN ACOMPAÑANTE</p>
         </div>
 
         <Header1 />
-        <PageTitle />
+        <PageTitle 
+          title="Tienda"
+        />
         <ShopList />
         <Footer1 parentClass="footer has-border-top" />
       </div>

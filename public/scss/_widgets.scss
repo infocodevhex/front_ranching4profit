@@ -82,7 +82,7 @@
       &:hover {
         a {
           border: 1px solid var(--Primary);
-          background-color: var(--bg-4);
+          background-color: var(--bg-6);
         }
       }
     }
@@ -878,8 +878,9 @@ instructors-item
   .nice-select {
     &:hover,
     &.active {
-      background-color: var(--bg-4);
-      border-color: var(--Primary);
+      background-color: var(--Secondary);
+      color: var(--White);
+      border-color: var(--Secondary);
     }
   }
 
@@ -1026,7 +1027,7 @@ instructors-item
       }
 
       .compare-at-price {
-        color: var(--Soft-Text);
+        color: var(--Soft-Test2);
         font-weight: 400;
         font-size: 15px;
         line-height: 28px;
@@ -2135,7 +2136,7 @@ instructors-item
 
     .shop-cart-head {
       display: flex;
-      background-color: var(--bg-4);
+      background-color: var(--bg-6);
       border-radius: 8px;
       padding: 21px 30px;
       gap: 10px;
@@ -2232,9 +2233,21 @@ instructors-item
     padding-bottom: 40px;
     white-space: nowrap;
     width: auto;
+    
     .coupon-btn {
       @include d-flex;
       gap: 28px;
+      
+      .tf-btn {
+        background-color: var(--White);
+        color: var(--Secondary);
+
+        &:hover {
+          background-color: var(--Secondary);
+          border: 1px solid var(--Secondary);
+          color: var(--White);
+        }
+      }
     }
   }
 

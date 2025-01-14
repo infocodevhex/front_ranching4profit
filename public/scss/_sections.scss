@@ -303,14 +303,14 @@
 
 .page-title {
   padding: 53px 0 51px;
-  background-color: var(--bg-4);
+  background-color: var(--White);
   position: relative;
 
   &::before {
     position: absolute;
     content: "";
     inset: 0;
-    background-image: url(./../images/page-title/inner-page.png);
+    // background-image: url(./../images/page-title/inner-page.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -3882,7 +3882,8 @@
         padding: 20px 20px 20px 20px !important;
         &:hover {
           .tf-btn {
-            background-color: var(--Primary);
+            background-color: var(--Secondary);
+            border: 1px solid var(--Secondary);
             color: var(--White);
           }
         }
@@ -3982,7 +3983,8 @@
       padding: 20px 20px 20px 20px !important;
       &:hover {
         .tf-btn {
-          background-color: var(--Primary);
+          background-color: var(--Secondary);
+          border: 1px solid var(--Secondary);
           color: var(--White);
         }
       }

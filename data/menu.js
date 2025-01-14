@@ -26,13 +26,18 @@ export const menuItems = [
     subItems: [],
   },
   {
+    title: "Tienda",
+    href: "/tienda",
+    subItems: [],
+  },
+  {
     title: "Profit tips",
     href: "/",
     subItems: [],
   },
   {
     title: "FAQs",
-    href: "/",
+    href: "/faq",
     subItems: [],
   },
 ];
