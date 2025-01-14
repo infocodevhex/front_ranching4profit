@@ -2,31 +2,21 @@ import React from "react";
 import Image from "next/image";
 export default function About() {
   return (
-    <section className="flat-about ">
+    <section style={{ padding: "50px  0  160px 0" }} className="flat-about">
       <div className="tf-container">
         <div className="row">
           <div className="col-lg-7">
             <div className="heading-content ">
-              <div className="widget box-sub-tag wow fadeInUp">
-                <div className="sub-tag-icon">
-                  <i className="icon-flash" />
-                </div>
-                <div className="sub-tag-title">
-                  <p>Best Quality</p>
-                </div>
-              </div>
               <h2 className="font-cardo wow fadeInUp">
-                UpSkill Education Theme, Built Specifically For The Education
-                Centers Which Is Dedicated To Teaching And Involve Learners.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent tincidunt enim a nibh convallis, eu imperdiet purus
+                efficitur.
               </h2>
             </div>
           </div>
           <div className="col-lg-5">
             <div className="content-right wow fadeInUp" data-wow-delay="0.1s">
-              <p>
-                Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod
-                ex tempor incididunt labore dolore magna aliquaenim minim.
-              </p>
+              <p style={{ fontSize: '28px' }}>“Tierras sanas, familias felices, negocios rentables”</p>
             </div>
           </div>
         </div>
@@ -92,7 +82,10 @@ export default function About() {
                   src="/images/courses/courses-01.jpg"
                 />
               </div>
-              <div className="about-item item-7 wow fadeInUp">
+              <div
+                className="about-item item-7 wow fadeInUp"
+                style={{ background: "#2E1C1C" }}
+              >
                 <p>
                   “Be open to new ideas and approaches. Develop your
                   problem-solving skills.”{" "}

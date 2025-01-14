@@ -29,13 +29,6 @@ export default function Header1() {
                 />
               </Link>
             </div>
-            {/* <div className="header-catalog">
-              <a href="#" className="header-text">
-                Categories
-                <i className="icon-arrow-bottom" />
-              </a>
-              <Categories />
-            </div> */}
             <div className="header-search flex-grow">
               <form
                 onSubmit={(e) => e.preventDefault()}
