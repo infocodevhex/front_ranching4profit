@@ -15,12 +15,16 @@ export default function DetailTabs() {
                 >
                   Description
                 </li>
-                <li
+                
+                {/* ====== Review TAB ===== */}
+                {/* <li
                   className="item-title product-title"
                   data-target="#produc-sub-review"
                 >
                   Review
-                </li>
+                </li> */}
+                {/* ====== END Review TAB ===== */}
+
               </ul>
               <div className="widget-content-tab">
                 <div className="product-sub active">
@@ -164,7 +168,10 @@ export default function DetailTabs() {
               </div>
             </div>
           </div>
-          <div className="col-lg-12">
+          
+          {/* ====== Reviews of products ===== */}
+
+          {/* <div className="col-lg-12">
             <div className="review-wrap mb-60">
               <div className="review-title flex justify-between items-center">
                 <div
@@ -288,8 +295,13 @@ export default function DetailTabs() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-12">
+          </div> */}
+
+          {/* ====== END Reviews of products ===== */}
+
+          {/* ====== Form to send product comment ===== */}
+
+          {/* <div className="col-lg-12">
             <div className="add-review-wrap">
               <div className="add-review-title text-22 fw-5">Leave A Reply</div>
               <p className="fs-15">
@@ -423,7 +435,10 @@ export default function DetailTabs() {
                 </div>
               </form>
             </div>
-          </div>
+          </div> */}
+        {/* ====== END Form to send product comment ===== */}
+
+
         </div>
       </div>
     </section>
