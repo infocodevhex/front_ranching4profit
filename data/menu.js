@@ -1,47 +1,42 @@
 export const menuItems = [
   {
     title: "Inicio",
+    href: "/",
     isActive: true,
-    subItems: [
-      // { title: "Home Page 01", href: "/" },
-      // { title: "Home Page 02", href: "/home-02" },
-      // { title: "Home Page 03", href: "/home-03" },
-      // { title: "Home Page 04", href: "/home-04" },
-      // { title: "Home Page 05", href: "/home-05" },
-      // { title: "Home Page 06", href: "/home-06" },
-      // { title: "Home Page 07", href: "/home-07" },
-      // { title: "Home Page 08", href: "/home-08" },
-      // { title: "Home Page 09", href: "/home-09" },
-      // { title: "Home Page 10", href: "/home-10" },
-    ],
+    subItems: [],
   },
   {
     title: "Servicios",
     hasMega: false,
     subItems: [
-      { title: "Cursos", href: "/" },
-      { title: "Enlace ejecutivo", href: "/" },
-      { title: "Tutor digital", href: "/" },
+      { title: "Cursos", href: "/cursos" },
+      { title: "Enlace ejecutivo", href: "/ejecutivo" },
+      { title: "Tutor digital", href: "/tutor" },
     ],
   },
   {
     title: "Nosotros",
+    href: "/about", 
     isActive: false,
     subItems: [],
   },
   {
     title: "Testimonios",
+    href: "/testimonios", 
     subItems: [],
   },
   {
     title: "Profit tips",
+    href: "/",
     subItems: [],
   },
   {
     title: "FAQs",
+    href: "/",
     subItems: [],
   },
 ];
+
 
 export const categories = [
   {
