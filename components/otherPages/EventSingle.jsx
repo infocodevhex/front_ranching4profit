@@ -2,6 +2,7 @@ import React from "react";
 import Reviews from "../course-single/Reviews";
 import Replay from "../course-single/Replay";
 import Image from "next/image";
+
 export default function EventSingle({}) {
   return (
     <div className="tf-container">
@@ -10,7 +11,7 @@ export default function EventSingle({}) {
           <div className="event-single-inner">
             <div className="event-decs">
               <h2 className="text-22 fw-5 wow fadeInUp" data-wow-delay="0s">
-                Event Description
+                Descripción del Evento
               </h2>
               <p className="text-1 fs-15">
                 Lorem ipsum dolor sit amet consectur adipisicing elit, sed do
@@ -29,19 +30,18 @@ export default function EventSingle({}) {
             </div>
             <div className="event-content">
               <h2 className="text-22 fw-5 wow fadeInUp" data-wow-delay="0s">
-                Event Content
+                Contenido del Evento
               </h2>
               <ul>
                 <li className="fs-15">
-                  There are no skill prerequisites for this course although it's
-                  helpful if you are familiar with operating your computer and .
+                  No hay requisitos previos de habilidades para este curso, aunque es
+                  útil si está familiarizado con el manejo de su computadora.
                 </li>
                 <li className="fs-15">
-                  You can take this course using a Mac, PC or LInux machine.
+                  Puede tomar este curso usando una máquina Mac, PC o Linux.
                 </li>
                 <li className="fs-15">
-                  It is recommended that you download the free Komodo text
-                  editor.
+                  Se recomienda descargar el editor de texto gratuito Komodo.
                 </li>
               </ul>
             </div>
@@ -50,121 +50,51 @@ export default function EventSingle({}) {
                 className="text-22 font-outfit fw-5 wow fadeInUp"
                 data-wow-delay="0s"
               >
-                Event Speakers
+                Ponentes del Evento
               </h2>
-              <div className="speaker">
-                <div className="swiper-container slider-courses-4 swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+              <div className="speaker" style={{ display: 'flex', justifyContent: 'center' }}>
+                <div className="swiper-container slider-courses-4 swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
                   <div
                     className="swiper-wrapper"
                     id="swiper-wrapper-9ebc38c84274317c"
                     aria-live="polite"
-                    style={{ transform: "translate3d(0px, 0px, 0px)" }}
+                    style={{ 
+                      transform: "translate3d(0px, 0px, 0px)",
+                      display: 'flex',
+                      justifyContent: 'center',
+                      width: '100%'
+                    }}
                   >
                     <div
                       className="speaker-swiper swiper-slide swiper-slide-active"
                       role="group"
                       aria-label="1 / 7"
+                      style={{ display: 'flex', justifyContent: 'center' }}
                     >
-                      <div
-                        className="speaker-item wow fadeInUp"
+                      <div className="speaker-item wow fadeInUp"
                         data-wow-delay="0s"
+                        style={{ 
+                          backgroundColor: 'white',
+                          boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
+                          borderRadius: '8px',
+                          padding: '15px'
+                        }}
                       >
                         <div className="speaker-img">
                           <Image
                             className="ls-is-cached lazyloaded"
-                            data-src="/images/instructors/instructors-01.jpg"
-                            alt=""
-                            src="/images/instructors/instructors-01.jpg"
+                            data-src="/images/instructors/FaustoBermudez.jpg"
+                            alt="Foto de Fausto Bermúdez"
+                            src="/images/instructors/FaustoBermudez.jpg"
                             width={520}
                             height={521}
                           />
                         </div>
                         <div className="author">
                           <a href="#" className="h6 fw-5">
-                            Theresa Webb
+                            Fausto Bermúdez
                           </a>
-                          <p>Professional Web Developer</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      className="speaker-swiper swiper-slide swiper-slide-active"
-                      role="group"
-                      aria-label="2 / 7"
-                    >
-                      <div
-                        className="speaker-item wow fadeInUp"
-                        data-wow-delay="0.1s"
-                      >
-                        <div className="speaker-img">
-                          <Image
-                            className="ls-is-cached lazyloaded"
-                            data-src="/images/instructors/instructors-02.jpg"
-                            alt=""
-                            src="/images/instructors/instructors-02.jpg"
-                            width={520}
-                            height={521}
-                          />
-                        </div>
-                        <div className="author">
-                          <a href="#" className="h6 fw-5">
-                            Ronald Richards
-                          </a>
-                          <p>Professional Web Developer</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      className="speaker-swiper swiper-slide swiper-slide-active"
-                      role="group"
-                      aria-label="3 / 7"
-                    >
-                      <div
-                        className="speaker-item wow fadeInUp"
-                        data-wow-delay="0.2s"
-                      >
-                        <div className="speaker-img">
-                          <Image
-                            className="ls-is-cached lazyloaded"
-                            data-src="/images/instructors/instructors-03.jpg"
-                            alt=""
-                            src="/images/instructors/instructors-03.jpg"
-                            width={520}
-                            height={521}
-                          />
-                        </div>
-                        <div className="author">
-                          <a href="#" className="h6 fw-5">
-                            Savannah Nguyen
-                          </a>
-                          <p>Professional Web Developer</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      className="speaker-swiper swiper-slide swiper-slide-active"
-                      role="group"
-                      aria-label="4 / 7"
-                    >
-                      <div
-                        className="speaker-item wow fadeInUp"
-                        data-wow-delay="0.3s"
-                      >
-                        <div className="speaker-img">
-                          <Image
-                            className="ls-is-cached lazyloaded"
-                            data-src="/images/instructors/instructors-04.jpg"
-                            alt=""
-                            src="/images/instructors/instructors-04.jpg"
-                            width={520}
-                            height={521}
-                          />
-                        </div>
-                        <div className="author">
-                          <a href="#" className="h6 fw-5">
-                            Kristin Watson
-                          </a>
-                          <p>Professional Web Developer</p>
+                          <p>Instructor</p>
                         </div>
                       </div>
                     </div>
@@ -172,12 +102,12 @@ export default function EventSingle({}) {
                 </div>
               </div>
             </div>
-            <div className="event-review-wrap review-wrap">
+            {/* <div className="event-review-wrap review-wrap">
               <Reviews />
             </div>
             <div className="event-add-review add-review-wrap">
               <Replay />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="col-lg-4">
@@ -193,35 +123,35 @@ export default function EventSingle({}) {
               />
             </div>
             <div className="sidebar-event-content">
-              <h5 className="fw-5">Event Info</h5>
+              <h5 className="fw-5">Información del Evento</h5>
               <ul>
                 <li>
                   <div className="icon-left">
                     <i className="flaticon-dollar"> </i>
-                    <p>Cost:</p>
+                    <p>Costo:</p>
                   </div>
                   <p className="cost">$435</p>
                 </li>
                 <li>
                   <div className="icon-left">
                     <i className="flaticon-user"> </i>
-                    <p>Total Slot:</p>
+                    <p>Cupos Totales:</p>
                   </div>
                   <p>87</p>
                 </li>
                 <li>
                   <div className="icon-left">
                     <i className="flaticon-unlock"> </i>
-                    <p>Booked Slot:</p>
+                    <p>Días restantes:</p>
                   </div>
                   <p>4</p>
                 </li>
               </ul>
               <a href="#" className="tf-btn">
-                Book Now <i className="icon-arrow-top-right" />
+                Reservar Ahora <i className="icon-arrow-top-right" />
               </a>
               <div className="event-social">
-                <h6 className="fw-5">Share</h6>
+                <h6 className="fw-5">Compartir</h6>
                 <ul className="social-list">
                   <li className="social-list">
                     <a href="#">
