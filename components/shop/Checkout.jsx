@@ -55,7 +55,111 @@ export default function Checkout() {
     <section className="tf-spacing-22 shop-checkout">
       <form onSubmit={(e) => e.preventDefault()} className="form-checkout">
         <div className="tf-container">
-          <div className="row">
+          <div className="row ">
+            <div className="col-lg-4">
+              <div className="sidebar-shop-checkout">            
+                <div className="sidebar-checkout-item payment">
+                  <h6 className="text-22 fw-5">Método de pago</h6>
+                  <fieldset>
+                    <ul className="payment-list">
+                      <li className="payment-item radio-item">
+                        <label htmlFor="direct-rank-trasfer">
+                          <p>Transferencia bancaria</p>
+                          <input
+                            name="payment-method"
+                            type="radio"
+                            id="direct-rank-trasfer"
+                            defaultChecked=""
+                          />
+                          <span className="btn-radio" />
+                        </label>
+                      </li>
+                      <li className="payment-item radio-item">
+                        <p className="descripton">
+                          Ponte en contacto con nosotros para acordar el medio de pago.
+                        </p>
+                      </li>
+                      <li className="payment-item radio-item mb-8">
+                        <label htmlFor="check-payment">
+                          <p>Pagar en linea</p>
+                          <input
+                            name="payment-method"
+                            type="radio"
+                            id="check-payment"
+                          />
+                          <span className="btn-radio" />
+                        </label>
+                      </li>
+                      {/* <li className="payment-item radio-item mb-8">
+                        <label htmlFor="cash-on-delivery">
+                          <p>Cash on Delivery</p>
+                          <input
+                            name="payment-method"
+                            type="radio"
+                            id="cash-on-delivery"
+                          />
+                          <span className="btn-radio" />
+                        </label>
+                      </li>
+                      <li className="payment-item radio-item">
+                        <label htmlFor="paypal">
+                          <p>&nbsp;PayPal</p>
+                          <input
+                            name="payment-method"
+                            type="radio"
+                            id="paypal"
+                          />
+                          <span className="btn-radio" />
+                        </label>
+                      </li> */}
+                    </ul>
+                  </fieldset>
+                </div>
+                <div className="sidebar-checkout-item your-order">
+                  <div className="title text-22 fw-5">Order summary</div>
+                  <div className="product-subtotal fs-15">
+                    <p className="fw-5">Product</p>
+                    <p className="fw-5">Subtotal</p>
+                  </div>
+                  <ul className="product-list">
+                    {cartProducts.map((elm, i) => (
+                      <li key={i} className="product-item">
+                        <p className="fs-15 fw-4">
+                          {elm.title} x {elm.quantity}
+                        </p>
+                        <p className="fs-15 fw-4">
+                          ${(elm.price * elm.quantity).toFixed(2)}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                  <ul className="checkout-total-bill">
+                    <li className="subtotal fw-5">
+                      <p>Total</p>
+                      <p>${totalPrice.toFixed(2)}</p>
+                    </li>
+                    {totalPrice ? (
+                      <li className="shipping fw-5">
+                        <p>Shipping</p>
+                        <p>$20.00</p>
+                      </li>
+                    ) : (
+                      ""
+                    )}
+                    <li className="total">
+                      <p className="h4">Total</p>
+                      <p className="h4">
+                        ${totalPrice ? (totalPrice + 20).toFixed(2) : 0}
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <button className="tf-btn" type="submit">
+                  Place Order
+                  <i className="icon-arrow-top-right" />
+                </button>
+              </div>
+            </div>
             <div className="col-lg-8">
               <div className="checkout-billing">
                 <h6 className="text-22 fw-5 wow fadeInUp">Billing details</h6>
@@ -259,113 +363,6 @@ export default function Checkout() {
                     </label>
                   </fieldset>
                 </div>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="sidebar-shop-checkout">
-                <div className="sidebar-checkout-item your-order">
-                  <div className="title text-22 fw-5">Order summary</div>
-                  <div className="product-subtotal fs-15">
-                    <p className="fw-5">Product</p>
-                    <p className="fw-5">Subtotal</p>
-                  </div>
-                  <ul className="product-list">
-                    {cartProducts.map((elm, i) => (
-                      <li key={i} className="product-item">
-                        <p className="fs-15 fw-4">
-                          {elm.title} x {elm.quantity}
-                        </p>
-                        <p className="fs-15 fw-4">
-                          ${(elm.price * elm.quantity).toFixed(2)}
-                        </p>
-                      </li>
-                    ))}
-                  </ul>
-                  <ul className="checkout-total-bill">
-                    <li className="subtotal fw-5">
-                      <p>Total</p>
-                      <p>${totalPrice.toFixed(2)}</p>
-                    </li>
-                    {totalPrice ? (
-                      <li className="shipping fw-5">
-                        <p>Shipping</p>
-                        <p>$20.00</p>
-                      </li>
-                    ) : (
-                      ""
-                    )}
-                    <li className="total">
-                      <p className="h4">Total</p>
-                      <p className="h4">
-                        ${totalPrice ? (totalPrice + 20).toFixed(2) : 0}
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <div className="sidebar-checkout-item payment">
-                  <h6 className="text-22 fw-5">Payment</h6>
-                  <fieldset>
-                    <ul className="payment-list">
-                      <li className="payment-item radio-item">
-                        <label htmlFor="direct-rank-trasfer">
-                          <p>Direct Bank Transfer</p>
-                          <input
-                            name="payment-method"
-                            type="radio"
-                            id="direct-rank-trasfer"
-                            defaultChecked=""
-                          />
-                          <span className="btn-radio" />
-                        </label>
-                      </li>
-                      <li className="payment-item radio-item">
-                        <p className="descripton">
-                          Make your payment directly into our bank account.
-                          Please use your Order ID as the payment reference.
-                          Your order won’t be shipped until the funds have
-                          cleared in our account.
-                        </p>
-                      </li>
-                      <li className="payment-item radio-item mb-8">
-                        <label htmlFor="check-payment">
-                          <p>Check Payments</p>
-                          <input
-                            name="payment-method"
-                            type="radio"
-                            id="check-payment"
-                          />
-                          <span className="btn-radio" />
-                        </label>
-                      </li>
-                      <li className="payment-item radio-item mb-8">
-                        <label htmlFor="cash-on-delivery">
-                          <p>Cash on Delivery</p>
-                          <input
-                            name="payment-method"
-                            type="radio"
-                            id="cash-on-delivery"
-                          />
-                          <span className="btn-radio" />
-                        </label>
-                      </li>
-                      <li className="payment-item radio-item">
-                        <label htmlFor="paypal">
-                          <p>&nbsp;PayPal</p>
-                          <input
-                            name="payment-method"
-                            type="radio"
-                            id="paypal"
-                          />
-                          <span className="btn-radio" />
-                        </label>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </div>
-                <button className="tf-btn" type="submit">
-                  Place Order
-                  <i className="icon-arrow-top-right" />
-                </button>
               </div>
             </div>
           </div>

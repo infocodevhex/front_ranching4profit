@@ -32,7 +32,7 @@ export default function ContactForm() {
       });
   };
   return (
-    <div className="contact-wrap bg-white tf-spacing-26 pt-0">
+    <div className="contact-wrap tf-spacing-26 pt-0">
       <div className="tf-container">
         <div className="row">
           <div className="col-lg-6">
@@ -45,14 +45,18 @@ export default function ContactForm() {
                 width={591}
                 height={680}
               />
-              <div className="blockquite">
+
+              {/* ====== Text Above the IMG ===== */}
+
+              {/* <div className="blockquite">
                 <p>
                   Happiness prosperous impression had conviction For every delay
                   in they
                 </p>
                 <p className="author">Ali Tufan</p>
                 <p className="sub-author">Founder &amp; CEO</p>
-              </div>
+              </div> */}
+
             </div>
           </div>
           <div className="col-lg-6">

@@ -1,4 +1,3 @@
-import Brands from "@/components/common/Brands";
 import Footer1 from "@/components/footers/Footer1";
 import Header1 from "@/components/headers/Header1";
 import ContactForm from "@/components/otherPages/contact/ContactForm";
@@ -17,7 +16,7 @@ export default function page() {
     <>
       <div id="wrapper">
         <div className="tf-top-bar flex items-center justify-center">
-          <p>Intro price. Get UpSkill for Big Sale -95% off.</p>
+          <p>$5,000 PESOS DE DESCUENTO PARA UN ACOMPAÑANTE</p>
         </div>
 
         <Header1 />
@@ -26,7 +25,7 @@ export default function page() {
             <div className="row">
               <div className="col-12">
                 <div className="content text-center">
-                  <ul className="breadcrumbs flex items-center justify-center gap-10">
+                  {/* <ul className="breadcrumbs flex items-center justify-center gap-10">
                     <li>
                       <Link href={`/`} className="flex">
                         <i className="icon-home" />
@@ -40,8 +39,8 @@ export default function page() {
                       <i className="icon-arrow-right" />
                     </li>
                     <li>Instructor</li>
-                  </ul>
-                  <h2 className="font-cardo fw-7">Contact Us</h2>
+                  </ul> */}
+                  <h2 className="font-cardo fw-7">Contacto</h2>
                   <h6>
                     Become an instructor and change lives — including your own
                   </h6>
@@ -55,7 +54,6 @@ export default function page() {
           <div className="tf-spacing-24 pb-0">
             <Features />
             <ContactForm />
-            <Brands />
             <Map />
           </div>
         </div>

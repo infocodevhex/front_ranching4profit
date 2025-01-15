@@ -1088,7 +1088,7 @@ instructors-item
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background-color: var(--bg-4);
+        background-color: var(--bg-2);
         z-index: -1;
       }
     }
@@ -1998,13 +1998,13 @@ instructors-item
 
 .login-wrap,
 .contact-wrap {
-  background-color: var(--bg-4);
+  // background-color: var(--bg-4);
   .img-left {
     @include flex(flex-end, flex-start);
     position: relative;
     margin-right: -26px;
     width: 100%;
-    height: 760px;
+    height: 100%;
 
     img {
       height: 100%;
@@ -2069,7 +2069,7 @@ instructors-item
     .button-submit {
       @include flex(center, center);
       width: 100%;
-      background-color: var(--Primary);
+      background-color: var(--Secondary);
       border-radius: 8px;
 
       button {
@@ -2338,6 +2338,7 @@ instructors-item
       border: none !important;
       border-bottom: 2px solid var(--Border) !important;
       color: var(--Primary);
+      background: transparent;
 
       option {
         color: var(--Primary);
@@ -3895,7 +3896,7 @@ instructors-item
     }
   }
   .content-right {
-    background-color: var(--bg-4) !important;
+    background-color: var(--bg-7) !important;
     border-radius: 0 12px 12px 0;
     h2 {
       margin-bottom: 9px;
@@ -3906,7 +3907,11 @@ instructors-item
     }
     .contact-form {
       .tf-input {
-        background-color: var(--bg-4);
+        background-color: transparent;
+      }
+
+      textarea {
+        resize: none;
       }
     }
     p {
