@@ -2,7 +2,7 @@
     @include flex(center, center);
     width: max-content;
     border: 1px solid var(--Border);
-    background-color: var(--White);
+    background-color: var(--bg-7);
     border-radius: 4px;
     padding: 5px 19.5px;
     @include transition3();
