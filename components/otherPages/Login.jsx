@@ -3,14 +3,25 @@ import React from "react";
 import Image from "next/image";
 export default function Login() {
   return (
-    <div className="main-content page-login">
+    <div className="main-content page-login" style={{ display: 'flex', flexDirection: 'column' }}>
       <section
-        style={{ backgroundColor: "#EEEFE7" }}
-        className="section-page-login login-wrap tf-spacing-4"
+        style={{ backgroundColor: "#EEEFE7", position: 'relative', minHeight: '90vh', display: 'flex', alignItems: 'center', padding: '50px 0' }}
+        className="section-page-login login-wrap "
       >
-        <div className="tf-container">
+        <div 
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(255, 255, 255, 0.4)',
+            zIndex: 0
+          }}
+        />
+        <div className="tf-container" style={{ position: 'relative', zIndex: 1, backgroundColor: 'rgba(255, 255, 255, 0.95)', borderRadius: '10px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', padding: 0 }}>
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-6 d-none d-lg-block">
               <div className="img-left wow fadeInLeft" data-wow-delay="0s">
                 <Image
                   className="ls-is-cached lazyloaded"
@@ -27,7 +38,7 @@ export default function Login() {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="content-right">
+              <div className="content-right" style={{ maxHeight: '100vh', overflowY: 'auto' }}>
                 <h2
                   className="login-title fw-7 wow fadeInUp"
                   data-wow-delay="0s"
@@ -36,14 +47,14 @@ export default function Login() {
                 </h2>
                 <div className="register">
                   <p className="fw-5 fs-15 wow fadeInUp" data-wow-delay="0s">
-                    No tienes una cuenta?
+                    ¿No tienes una cuenta?
                   </p>
                   <a
                     href="#"
                     className="fw-5 fs-15 wow fadeInUp"
                     data-wow-delay="0s"
                   >
-                    Registrate
+                    Regístrate aquí
                   </a>
                 </div>
                 <form
@@ -67,7 +78,7 @@ export default function Login() {
                         required
                       />
                       <label className="tf-field-label fs-15" htmlFor="field1">
-                        Email
+                        Correo electrónico
                       </label>
                     </fieldset>
                   </div>
@@ -88,13 +99,13 @@ export default function Login() {
                         required
                       />
                       <label className="tf-field-label fs-15" htmlFor="field2">
-                        Password
+                        Contraseña
                       </label>
                     </fieldset>
                   </div>
                   <div className="checkbox-item">
                     <label className="wow fadeInUp" data-wow-delay="0s">
-                      <p className="fs-15">Recordar</p>
+                      <p className="fs-15">Recordarme</p>
                       <input type="checkbox" />
                       <span className="btn-checkbox" />
                     </label>
@@ -103,7 +114,7 @@ export default function Login() {
                       className="fs-15 wow fadeInUp"
                       data-wow-delay="0.1s"
                     >
-                      Forgot your password?
+                      ¿Olvidaste tu contraseña?
                     </a>
                   </div>
                   <button
