@@ -55,7 +55,7 @@
             height: 80px;
             width: 80px;
             border-radius: 50%;
-            background-color: var(--bg-4);
+            background-color: var(--bg-6);
             @include flex(center, center);
             margin-bottom: 13px;
             i {
@@ -75,8 +75,8 @@
         @include d-flex();
         justify-content: space-between;
         padding: 33px 60px 32px;
-        background-color: var(--bg-4);
-        border: 2px dashed var(--Secondary);
+        background-color: var(--bg-6);
+        border: 2px dashed var(--bg-4);
         border-radius: 8px;
         margin-bottom: 57px;
         margin-left: 10px;

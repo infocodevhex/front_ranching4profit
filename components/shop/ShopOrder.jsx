@@ -12,9 +12,9 @@ export default function ShopOrder() {
                   <div className="icon">
                     <i className="flaticon-check" />
                   </div>
-                  <h2 className="letter-spacing-1">Your Order Is Completed!</h2>
+                  <h2 className="letter-spacing-1">¡Tu orden está completa!</h2>
                   <div className="text-content">
-                    Thank you. Your order has been received.
+                    Recibirás un correo con toda la confirmación e información de pago
                   </div>
                 </div>
                 <div className="order-info">
