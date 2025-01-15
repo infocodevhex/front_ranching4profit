@@ -216,6 +216,7 @@ export default function Events() {
                     key={index}
                     className={`events-item style2 hover-img wow fadeInUp`}
                     data-wow-delay={event.wowDelay}
+                    style={{ backgroundColor: 'white', boxShadow: '0 2px 8px rgba(0, 0, 0, 0.03)', borderRadius: '8px', overflow: 'hidden' }}
                   >
                     <div className="event-item-img image-wrap">
                       <Image
@@ -226,12 +227,15 @@ export default function Events() {
                         width={658}
                         height={481}
                       />
-                      <div className="event-item-date">
-                        <h2 className="date-text fw-5">{event.date.day}</h2>
-                        <h6 className="date-text fw-5">{event.date.month}</h6>
+                      <div
+                        style={{ backgroundColor: "#284849" }}
+                        className="event-item-date"
+                      >
+                        <h2 style={{ color: "white" }} className="date-text fw-5">{event.date.day}</h2>
+                        <h6 style={{ color: "white" }} className="date-text fw-5">{event.date.month}</h6>
                       </div>
                     </div>
-                    <div className="event-item-content">
+                    <div className="event-item-content" style={{ backgroundColor: 'white', padding: '20px' }}>
                       <div className="event-item-sub">
                         <div className="item-sub-address">
                           <i className="flaticon-location" />

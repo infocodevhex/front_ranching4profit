@@ -3,7 +3,10 @@ import Link from "next/link";
 import { events2 } from "@/data/events";
 export default function Events() {
   return (
-    <section className="section-event tf-spacing-11">
+    <section
+      style={{ backgroundColor: "#DDDECE" }}
+      className="section-event tf-spacing-11"
+    >
       <div className="tf-container">
         <div className="row">
           <div className="col-12">
@@ -12,20 +15,12 @@ export default function Events() {
                 className="fw-7 letter-spacing-1 wow fadeInUp"
                 data-wow-delay="0.1s"
               >
-                Upcoming Events
+                Próximos Eventos
               </h2>
               <div className="flex items-center justify-between flex-wrap gap-10">
                 <div className="sub fs-15 wow fadeInUp" data-wow-delay="0.2s">
                   Lorem ipsum dolor sit amet, consectetur.
                 </div>
-                <a
-                  href="event-list.html "
-                  className="tf-btn-arrow wow fadeInUp"
-                  data-wow-delay="0.3s"
-                >
-                  View All Events
-                  <i className="icon-arrow-top-right" />
-                </a>
               </div>
             </div>
             <div className="wrap-item">
@@ -52,13 +47,20 @@ export default function Events() {
                       </Link>
                     </div>
                     <Link className="tf-btn" href={`/event-single/${event.id}`}>
-                      Get Ticket
+                      Reservar
                       <i className="icon-arrow-top-right" />
                     </Link>
                   </div>
-                  <div className="event-item-date">
-                    <h2 className="fw-7">{event.date}</h2>
-                    <h6 className="fw-5">{event.month}</h6>
+                  <div
+                    style={{ backgroundColor: "#284849" }}
+                    className="event-item-date"
+                  >
+                    <h2 style={{ color: "white" }} className="fw-7">
+                      {event.date}
+                    </h2>
+                    <h6 style={{ color: "white" }} className="fw-5">
+                      {event.month}
+                    </h6>
                   </div>
                 </div>
               ))}

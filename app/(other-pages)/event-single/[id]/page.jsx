@@ -20,26 +20,12 @@ export default function page({ params }) {
           <p>Intro price. Get UpSkill for Big Sale -95% off.</p>
         </div>
         <Header1 />
-        <div className="event-single-page-title page-title style-5">
+        <div className="event-single-page-title style-5">
           <div className="tf-container">
             <div className="row">
               <div className="col-lg-8">
                 <div className="content">
-                  <ul className="breadcrumbs flex items-center justify-start gap-10 mb-60">
-                    <li>
-                      <Link href={`/`} className="flex">
-                        <i className="icon-home" />
-                      </Link>
-                    </li>
-                    <li>
-                      <i className="icon-arrow-right" />
-                    </li>
-                    <li>Pages</li>
-                    <li>
-                      <i className="icon-arrow-right" />
-                    </li>
-                    <li>Instructor</li>
-                  </ul>
+                  
                   <h2 className="font-cardo fw-7">{event.title}</h2>
                   <p className="except">
                     Supposing so be resolving breakfast am or perfectly. It drew
@@ -48,15 +34,15 @@ export default function page({ params }) {
                   <ul className="entry-meta mb-30">
                     <li>
                       <i className="flaticon-location fs-16" />
-                      <p className="fs-15">United States</p>
+                      <p className="fs-15 text-black">Chihuahua</p>
                     </li>
                     <li>
                       <i className="flaticon-calendar fs-16" />
-                      <p className="fs-15">December 4, 2024 - June 30, 2024</p>
+                      <p className="fs-15 text-black">December 4, 2024 - June 30, 2024</p>
                     </li>
                     <li>
                       <i className="flaticon-clock fs-16" />
-                      <p className="fs-15">1:30 pm - 3:30 pm</p>
+                      <p className="fs-15 text-black">1:30 pm - 3:30 pm</p>
                     </li>
                   </ul>
                 </div>

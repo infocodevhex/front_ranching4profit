@@ -87,7 +87,7 @@ export default function Hero() {
               </h6>
               <div className="bottom-btns">
                 <a
-                  href="#"
+                  href="/event-list"
                   className="tf-btn wow fadeInUp"
                   data-wow-delay="0.3s"
                 >

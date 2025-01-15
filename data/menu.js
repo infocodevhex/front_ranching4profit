@@ -9,7 +9,7 @@ export const menuItems = [
     title: "Servicios",
     hasMega: false,
     subItems: [
-      { title: "Cursos", href: "/cursos" },
+      { title: "Cursos", href: "/event-list" },
       { title: "Enlace ejecutivo", href: "/ejecutivo" },
       { title: "Tutor digital", href: "/tutor" },
     ],
